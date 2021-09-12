@@ -1,0 +1,24 @@
+{
+  "name": "combyne-notes-app",
+  "version": "1.0.0",
+  "description": "Awesome Notes Application - Combyne Case Study",
+  "scripts": {
+    "start": "cd combyne-server && npm run start:prod",
+    "server": "cd combyne-server && npm i && npm run build",
+    "client": "cd combyne-client && yarn install && yarn build",
+    "heroku-prebuild": "npm run client && npm run server",
+    "start:dev": "npm run server:dev & npm run client:dev",
+    "server:dev": "cd combyne-server && npm run start:dev",
+    "client:dev": "cd combyne-client && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaypitroda12/notes-app.git"
+  },
+  "author": "Jay Pitroda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaypitroda12/notes-app/issues"
+  },
+  "homepage": "https://github.com/jaypitroda12/notes-app#readme"
+}
