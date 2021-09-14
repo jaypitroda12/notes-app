@@ -1,0 +1,22 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "Combyne Notes Application",
+  "scripts": {
+    "start": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start",
+    "start:dev": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start:dev",
+    "start:debug": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start:debug",
+    "build": "cd combyne-client && npm install && npm run build && cd ../combyne-server && npm install && npm run build",
+    "postinstall": "cd combyne-client && npm install && npm run build && cd ../combyne-server && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaypitroda12/notes-app.git"
+  },
+  "author": "Jay Pitroda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaypitroda12/notes-app/issues"
+  },
+  "homepage": "https://github.com/jaypitroda12/notes-app#readme"
+}

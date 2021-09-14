@@ -1,0 +1,1 @@
+web: cd combyne-server && npm run start:prod

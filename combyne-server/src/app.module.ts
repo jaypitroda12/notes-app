@@ -14,7 +14,7 @@ import { NotesModule } from './notes/notes.module';
     }),
     NotesModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../../combyne-client', 'client'),
+      rootPath: join(__dirname, '../..', 'combyne-client/build'),
       renderPath: '/',
       serveStaticOptions: {
         redirect: true,
