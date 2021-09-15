@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Combyne Notes Application",
   "scripts": {
-    "start": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start",
+    "start": "(cd combyne-server && npm start) & (cd combyne-client && npm start)",
     "start:dev": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start:dev",
     "start:debug": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start:debug",
-    "build": "cd combyne-client && npm install && npm run build && cd ../combyne-server && npm install && npm run build",
-    "postinstall": "cd combyne-client && npm install && npm run build && cd ../combyne-server && npm install && npm run build"
+    "start:prod": "cd combyne-server && npm run start:prod",
+    "build": "(cd combyne-client && npm install && npm run build) & (cd combyne-server && npm install && npm run build)",
+    "postinstall": "(cd combyne-client && npm install && npm run build) & (cd combyne-server && npm install && npm run build)"
   },
   "repository": {
     "type": "git",
