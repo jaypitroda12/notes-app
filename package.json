@@ -1,14 +1,14 @@
 {
   "name": "notes-app",
   "version": "1.0.0",
-  "description": "Combyne Notes Application",
+  "description": "Notes Application",
   "scripts": {
-    "start": "(cd combyne-server && npm start) & (cd combyne-client && npm start)",
-    "start:dev": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start:dev",
-    "start:debug": "cd combyne-client && npm install && npm start && cd ../combyne-server && npm install && npm start:debug",
-    "start:prod": "cd combyne-server && npm run start:prod",
-    "build": "(cd combyne-client && npm install && npm run build) & (cd combyne-server && npm install && npm run build)",
-    "postinstall": "(cd combyne-client && npm install && npm run build) & (cd combyne-server && npm install && npm run build)"
+    "start": "(cd server && npm start) & (cd client && npm start)",
+    "start:dev": "cd client && npm install && npm start && cd ../server && npm install && npm start:dev",
+    "start:debug": "cd client && npm install && npm start && cd ../server && npm install && npm start:debug",
+    "start:prod": "cd server && npm run start:prod",
+    "build": "(cd client && npm install && npm run build) & (cd server && npm install && npm run build)",
+    "postinstall": "(cd client && npm install && npm run build) & (cd server && npm install && npm run build)"
   },
   "repository": {
     "type": "git",
